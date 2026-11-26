@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6e3;
+    color: #333;
+}
+
+header {
+    background-color: #8b0000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+    color: #f5d6a0;
+}
+
+nav {
+    background-color: #a52a2a;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+main h2 {
+    color: #8b0000;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 5px;
+}
+
+/* Картинки по центру */
+main img {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+}
+
+.main-img {
+    width: 350px;
+}
+
+main ul {
+    padding-left: 20px;
+}
+
+main ul li {
+    margin-bottom: 5px;
+}
+
+.city {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.city h3 {
+    color: #a52a2a;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main a {
+    color: #8b0000;
+}
+
+main a:hover {
+    color: #d2691e;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+}
+
+form button {
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #a52a2a;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #8b0000;
+    color: #f5d6a0;
+    font-size: 13px;
+}
