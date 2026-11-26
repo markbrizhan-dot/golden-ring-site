@@ -24,34 +24,47 @@
     <p><a href="mailto:lanaNsoz@mail.ru">lanaNsoz@mail.ru</a></p>
 
     <h2>Адрес сайта</h2>
-    <p>Сайт размещён по адресу: <a href="http://www.phpbasa.zz.mu">www.phpbasa.zz.mu</a></p>
+    <p>Сайт размещён по адресу: <a href="https://markbrizhan-dot.github.io/golden-ring-site/">markbrizhan-dot.github.io/golden-ring-site</a></p>
 
     <h2>Написать нам</h2>
-    <form action="#" method="post">
+    
+    <form id="contactForm">
         <p>
             <label>Ваше имя:<br>
-            <input type="text" name="name" placeholder="Введите имя">
+            <input type="text" name="name" placeholder="Введите имя" required>
             </label>
         </p>
         <p>
             <label>Ваш e-mail:<br>
-            <input type="text" name="email" placeholder="name@mail.ru">
+            <input type="email" name="email" placeholder="name@mail.ru" required>
             </label>
         </p>
         <p>
             <label>Сообщение:<br>
-            <textarea name="message" rows="5" cols="30" placeholder="Текст сообщения"></textarea>
+            <textarea name="message" rows="5" cols="30" placeholder="Текст сообщения" required></textarea>
             </label>
         </p>
         <p>
             <button type="submit">Отправить</button>
         </p>
     </form>
+
+    <p id="successMessage" style="display: none; color: green; font-weight: bold; background: #e8f5e9; padding: 15px; border-radius: 5px; border: 1px solid #4caf50;">
+        Спасибо! Ваше сообщение успешно отправлено.
+    </p>
 </main>
 
 <footer>
     <p>&copy; 2026 Золотое кольцо России.</p>
 </footer>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        this.style.display = 'none';
+        document.getElementById('successMessage').style.display = 'block';
+    });
+</script>
 
 </body>
 </html>

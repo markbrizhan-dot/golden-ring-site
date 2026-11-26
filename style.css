@@ -59,16 +59,22 @@ main h2 {
     padding-bottom: 5px;
 }
 
-/* Картинки по центру */
 main img {
     display: block;
     margin: 15px auto;
-    max-width: 100%;
-    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #a52a2a;
+    border-radius: 5px;
+    background-color: #eee;
 }
 
 .main-img {
-    width: 350px;
+    max-width: 350px;
+    height: auto;
+    border: none;
 }
 
 main ul {
@@ -100,6 +106,7 @@ main a:hover {
 }
 
 form input[type="text"],
+form input[type="email"],
 form textarea {
     width: 100%;
     max-width: 400px;
